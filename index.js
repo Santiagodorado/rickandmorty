@@ -24,9 +24,7 @@ getAllCharacters()
     characters.forEach((character) => {
       const row = table.insertRow(-1);
       const cell = row.insertCell(0);
-      const cell2 = row.insertCell(0);
-
-      cell2.innerHTML = `<p>${character.id}</p>`; 
+      
       cell.innerHTML = `<a href="#" id="open" onclick="showInfo(${character.id})">${character.name}</a>`;
     });
   })
